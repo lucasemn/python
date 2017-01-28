@@ -19,8 +19,8 @@ def maketransrot13(phrase):
     first. All the letters of the second string are the letters of the first
     string rotated in 13 forward positions.'''
     rot13table = str.maketrans(
-	    'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
-        'nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM'
+		'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
+		'nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM'
     )
     return phrase.translate(rot13table)
 
